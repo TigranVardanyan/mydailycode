@@ -1,0 +1,43 @@
+:root {
+  --main-background-color: #000;
+  --main-text-color: #fff;
+  --accent-text-color: red;
+  --main-hover-color: #0f0; }
+
+body {
+  background: var(--main-background-color);
+  color: var(--main-text-color); }
+  body a {
+    color: inherit; }
+    body a:hover {
+      color: var(--main-hover-color); }
+  body .wrapper header {
+    height: 100px; }
+    body .wrapper header nav {
+      -webkit-box-align: start;
+      -webkit-align-items: start;
+          -ms-flex-align: start;
+              align-items: start;
+      font-family: 'Liu Jian Mao Cao', cursive; }
+      body .wrapper header nav button {
+        text-align: right; }
+        body .wrapper header nav button i {
+          color: var(--main-text-color); }
+      body .wrapper header nav .navbar-collapse {
+        -webkit-flex-basis: unset;
+            -ms-flex-preferred-size: unset;
+                flex-basis: unset;
+        -webkit-box-flex: unset;
+        -webkit-flex-grow: unset;
+            -ms-flex-positive: unset;
+                flex-grow: unset; }
+  body .wrapper .main_content {
+    height: 900px; }
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse; } }

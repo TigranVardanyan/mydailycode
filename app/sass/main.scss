@@ -1,0 +1,49 @@
+:root {
+  --main-background-color: #000;
+  --main-text-color: #fff;
+  --accent-text-color: red;
+  --main-hover-color: #0f0;
+}
+
+
+
+body {
+  background: var(--main-background-color);
+  color: var(--main-text-color);
+  a {
+    color: inherit;
+    &:hover {
+      color: var(--main-hover-color);
+    }
+  }
+  .wrapper {
+    header {
+      height: 100px;
+      nav {
+        align-items: start;
+        font-family: 'Liu Jian Mao Cao', cursive;
+        button {
+          text-align: right;
+          i {
+            color: var(--main-text-color);
+          }
+        }
+        .navbar-collapse {
+          flex-basis: unset;
+          flex-grow: unset;
+        }
+      }
+    }
+    .main_content {
+      height: 900px;
+    }
+  }
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: row-reverse;
+  }
+}
